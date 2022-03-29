@@ -5,24 +5,21 @@ const readFile = require(utilsRoot + '/readFile');
 
 const java = readFile(docsRoot + '/notes/java')
 const algorithm = readFile(docsRoot + '/notes/algorithm')
-const books = readFile(docsRoot + '/notes/books')
-const mq = readFile(docsRoot + '/notes/mq')
 const network = readFile(docsRoot + '/notes/network')
 const os = readFile(docsRoot + '/notes/os')
 const web = readFile(docsRoot + '/notes/web')
-
 const projects = readFile(docsRoot + '/projects')
 
-const essay = [{
-    title: '日常随笔',
-    collapsible: true,
-    children: readFile(docsRoot + '/essay')
+const explain = [{
+    title: '操作说明',
+    collapsible: false,
+    children: readFile(docsRoot + '/explain')
 }]
 
-const me = [{
-    title: '关于我',
+const us = [{
+    title: '关于我们',
     collapsible: false,
-    children: readFile(docsRoot + '/me')
+    children: readFile(docsRoot + '/us')
 }]
 
 const themeConfig = {
@@ -40,7 +37,7 @@ const themeConfig = {
     // 最后更新时间
     lastUpdated: 'Last Updated',
     // 作者
-    author: '半径圆',
+    // author: '半径圆',
     // 项目开始时间
     startYear: '2022',
     // 简体中文
@@ -52,7 +49,7 @@ const themeConfig = {
 
     // noFoundPageByTencent: false,
 
-    repo: 'https://github.com/iznilul',
+    repo: 'https://github.com/sdutitlab',
     repoLabel: 'Github',
 
     smoothScroll: true,
@@ -72,7 +69,7 @@ const themeConfig = {
             icon: "reco-home"
         },
         {
-            text: '笔记',
+            text: '学习笔记',
             icon: 'reco-category',
             items: [
                 {
@@ -92,31 +89,23 @@ const themeConfig = {
                     link: "/notes/algorithm/1.about"
                 },
                 {
-                    text: "消息队列",
-                    link: "/notes/mq/1.about"
-                },
-                {
                     text: "操作系统",
                     link: "/notes/os/1.about"
                 },
-                {
-                    text: "书籍分享",
-                    link: "/notes/books/1.about"
-                },
             ]
         }, {
-            text: '开源项目',
+            text: '比赛项目',
             link: '/projects/1.about',
             icon: 'reco-coding'
         },
         {
-            text: '随笔',
-            link: '/essay/1.about',
-            icon: 'reco-document'
+            text: '操作说明',
+            link: '/explain/1.about',
+            icon: 'reco-suggestion'
         },
         {
-            text: '关于我',
-            link: '/me/1.about',
+            text: '关于我们',
+            link: '/us/1.about',
             icon: 'reco-eye'
         },
 
@@ -127,12 +116,10 @@ const themeConfig = {
         '/notes/web/': web,
         '/notes/network/': network,
         '/notes/algorithm/': algorithm,
-        '/notes/mq/': mq,
         '/notes/os/': os,
-        '/notes/books/': books,
         '/projects/': projects,
-        '/essay/': essay,
-        '/me/': me
+        '/explain/': explain,
+        '/us/': us
     },
 };
 

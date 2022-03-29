@@ -190,7 +190,8 @@ export default {
       height: calc(100vh - 3.4rem);
       overflow hidden
       text-align: center;
-      background: url('https://img-blog.csdnimg.cn/img_convert/6602d9cf3ab2ce79293484b2b871138f.gif') center / cover no-repeat；
+      background: url('./images/bg.svg') center/cover no-repeat；
+      //background: url('https://img-blog.csdnimg.cn/img_convert/6602d9cf3ab2ce79293484b2b871138f.gif') center / cover no-repeat；
 
       h1 {
         font-weight: bold;
@@ -228,8 +229,8 @@ export default {
       overflow: hidden;
 
       &.yesterday, &.today, &.tomorrow {
-        //background: var(--code-color);
-        background: url('https://img-blog.csdnimg.cn/img_convert/6602d9cf3ab2ce79293484b2b871138f.gif') center / cover no-repeat;
+        background: var(--code-color);
+        //background: url('https://img-blog.csdnimg.cn/img_convert/6602d9cf3ab2ce79293484b2b871138f.gif') center / cover no-repeat;
       }
 
       .wish-inner {
